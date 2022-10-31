@@ -1,0 +1,345 @@
+/*----------------------------- Main------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+:root{
+   --main-color:#8e44ad;
+   --black:#222;
+   --white:#fff;
+   --light-black:#777;
+   --light-white:#fff9;
+   --dark-bg:rgba(0,0,0,.7);
+   --light-bg:#eee;
+   --border:.1rem solid var(--black);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+   --text-shadow:0 1.5rem 3rem rgba(0,0,0,.3);
+}
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   text-transform: capitalize;
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+   width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+   background-color: var(--white);
+}
+
+html::-webkit-scrollbar-thumb{
+   background-color: var(--main-color);
+}
+
+section{
+   padding:5rem 10%;
+}
+/*----------------------------- Button------------------------------- */
+.btn{
+   display: inline-block;
+   background: rgba(223, 160, 3, 0.79);
+   margin-top: 1rem;
+   color:var(--white);
+   font-size: 1.7rem;
+   padding:1rem 3rem;
+   cursor: pointer;
+}
+
+.btn:hover{
+   background: var(--main-color);
+}
+/*----------------------------- Button------------------------------- */
+/*----------------------------- About and Contact Us------------------------------- */
+#about-section { 
+   position: relative; 
+   height: auto;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: rgba(240, 228, 25, 0.68);
+}
+
+.about-right{
+   width: 57%;
+}
+.about-right ul li{
+   display: flex;
+   align-items: center;
+}
+
+.about-right p{
+   color: rgb(0, 0, 0);
+   line-height: 26px;
+   font-size: 20px;
+}
+.about-right .address{
+   margin: 45px 0;
+}
+.about-right .address ul li{
+   margin-bottom: 10px;
+   margin-left: 50px;
+   
+}
+.address .address-logo{
+   margin-right: 15px;
+   color: #e74d06;
+   margin-bottom: 10px;
+}
+.address .saprater{
+   margin: 0 35px;
+}
+/*----------------------------- About and Contact Us------------------------------- */
+/*----------------------------- Home------------------------------- */
+.home-container {
+   position: relative;
+   text-align: center;
+   color: white;
+   background-image: url("../images/michaela-baum-VnM6_liIRJ0-unsplash.jpg" );
+   background-size:     cover;                  
+    background-repeat:   no-repeat;
+    background-position: center center;  
+    height: 100vh;
+ }
+ 
+ /* Bottom right text */
+ .home-text {
+   position: absolute;
+   bottom: 50%;
+   left: 5%;
+   font-size: 60px;
+ }
+ /*----------------------------- Home------------------------------- */
+/*----------------------------- Header------------------------------ */
+.header{
+   position: sticky;
+   top:0; left:0; right:0;
+   z-index: 1000;
+   background-color: var(--white);
+   display: flex;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   box-shadow: var(--box-shadow);
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header .logo{
+   font-size: 4rem;
+   color:var(--black);
+   font-family: 'Great Vibes', cursive;
+}
+
+.header .navbar a{
+   font-size: 2rem;
+   margin-left: 2rem;
+   color:var(--black);
+   font-family: 'Raleway', sans-serif;
+}
+
+.header .navbar a:hover{
+   color:var(--main-color);
+}
+#menu-btn{
+   font-size: 2.5rem;
+   cursor: pointer;
+   color:var(--black);
+   display: none;
+}
+/*----------------------------- Header------------------------------ */
+.home{
+   padding:0;
+}
+
+.container{
+    max-width: auto;
+    padding:2rem;
+    margin:0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+ }
+
+ .Title{
+   line-height: 100px;
+   height: 100px;
+   text-align: center;
+   font-family: 'Great Vibes', cursive;
+   font-size: 50px;
+   background-color: rgba(245, 228, 23, 0.68);
+ }
+ /*----------------------------- Product Form------------------------------- */
+ .product-form-container.centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+ }
+ 
+ .product-form-container form{
+    max-width: 50rem;
+    margin:0 auto;
+    padding:2rem;
+    border-radius: .5rem;
+    background: rgba(76, 175, 80, 0.3);
+ }
+ 
+ .product-form-container form h3{
+    text-transform: uppercase;
+    color:var(--black);
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+ }
+ 
+ .product-form-container form .box{
+    width: 100%;
+    border-radius: .5rem;
+    padding:1.2rem 1.5rem;
+    font-size: 1.7rem;
+    margin:1rem 0;
+    background: var(--white);
+    text-transform: none;
+ }
+  /*----------------------------- Product Form------------------------------- */
+   /*----------------------------- Product Table------------------------------- */
+ .product-display{
+    margin:2rem 0;
+    background:rgba(247, 211, 248, 0.68)
+ }
+ 
+ .product-display .product-display-table{
+    width: 900px;
+    text-align: center;
+    
+ }
+
+ .product-display .product-display-table th{
+    padding:1rem;
+    font-size: 2rem;
+    font-family: 'Quicksand', sans-serif;
+    border-bottom: 1px solid black;
+ }
+ 
+ 
+ .product-display .product-display-table td{
+    padding:1rem;
+    font-size: 1.75rem;
+    border-bottom: 1px solid black;
+    
+ }
+ 
+ .product-display .product-display-table .btn:first-child{
+    margin-top: 0;
+ }
+ 
+ .product-display .product-display-table .btn:last-child{
+    background: rgba(245, 55, 2, 0.68);
+ }
+ 
+ .product-display .product-display-table .btn:last-child:hover{
+    background: var(--black);
+ }
+ /*----------------------------- Product Table------------------------------- */
+
+/* media queries  */
+
+@media (max-width:1200px){
+
+   section{
+      padding:3rem 5%;
+   }
+
+}
+
+@media (max-width:991px){
+
+   html{
+      font-size: 55%;
+   }
+
+   section{
+      padding:3rem 2rem;
+   }
+
+   .home .slide .content h3{
+      font-size: 10vw;
+   }
+
+}
+
+@media (max-width:768px){
+   .container{
+      display: flex;
+      flex-direction: column;
+   }
+    .product-display{
+        overflow-y:scroll;
+     }
+  
+     .product-display .product-display-table{
+        width: 100%;
+     }
+
+   .heading h1{
+      font-size: 4rem;
+   }
+
+   #menu-btn{
+      display: inline-block;
+      transition: .2s linear;
+   }
+
+   #menu-btn.fa-times{
+      transform: rotate(180deg);
+   }
+
+   .header .navbar{
+      position: absolute;
+      top:99%; left:0; right:0;
+      background-color: var(--white);
+      border-top: var(--border);
+      padding:2rem;
+      transition: .2s linear;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+   }
+
+   .header .navbar.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+   }
+
+   .header .navbar a{
+      display: block;
+      margin:2rem;
+      text-align: center;
+   }
+
+}
+
+@media (max-width:450px){
+
+   html{
+      font-size: 50%;
+   }
+
+   .heading-title{
+      font-size: 3.5rem;
+   }
+
+}
+
+
